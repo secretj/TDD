@@ -1,20 +1,19 @@
 package test.tdd.controller;
 
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)	/*JUnit에 내장된 실행자 외에 다른 실행자를 실행시킨다.
- 								여기선 SpringRunner를 실행
- 								즉, 스프링 부트 테스트와 JUnit사이의 연결자 역할*/
+여기선 SpringRunner를 실행
+즉, 스프링 부트 테스트와 JUnit사이의 연결자 역할*/
 @WebMvcTest(controllers = HelloController.class)
  												
 public class HelloControllerTest {
